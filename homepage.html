@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBite - Food Delivery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1><a href="/"><i class="fas fa-utensils"></i> QuickBite</a></h1>
+        </div>
+        <div class="search-bar">
+            <form action="/restaurants/search" method="GET">
+                <input type="text" name="query" placeholder="Search for restaurants or cuisines...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/restaurants">Restaurants</a></li>
+                <li><a href="/auth/login" class="btn-login">Login</a></li>
+                <li><a href="/auth/register" class="btn-register">Register</a></li>
+                <li><a href="/cart" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Craving something delicious?</h2>
+            <p>Get it delivered to your doorstep in under 30 minutes!</p>
+            <a href="/restaurants" class="btn-order">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <h3>Popular Categories</h3>
+        <div class="category-grid">
+            <div class="category-item">
+                <a href="/restaurants?category=Pizza">
+                    <img src="https://via.placeholder.com/100" alt="Pizza">
+                    <p>Pizza</p>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="/restaurants?category=Burgers">
+                    <img src="https://via.placeholder.com/100" alt="Burgers">
+                    <p>Burgers</p>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="/restaurants?category=Sushi">
+                    <img src="https://via.placeholder.com/100" alt="Sushi">
+                    <p>Sushi</p>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="/restaurants?category=Pasta">
+                    <img src="https://via.placeholder.com/100" alt="Pasta">
+                    <p>Pasta</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Restaurants -->
+    <section class="featured-restaurants">
+        <h3>Featured Restaurants</h3>
+        <div class="restaurant-slider">
+            <div class="restaurant-card">
+                <a href="/restaurants/1">
+                    <img src="https://via.placeholder.com/300" alt="Pizza Palace">
+                    <h4>Pizza Palace</h4>
+                    <p>⭐ 4.5 (500+) • Italian • $$</p>
+                    <button class="btn-view">View Menu</button>
+                </a>
+            </div>
+            <div class="restaurant-card">
+                <a href="/restaurants/2">
+                    <img src="https://via.placeholder.com/300" alt="Burger King">
+                    <h4>Burger King</h4>
+                    <p>⭐ 4.2 (1k+) • American • $</p>
+                    <button class="btn-view">View Menu</button>
+                </a>
+            </div>
+            <div class="restaurant-card">
+                <a href="/restaurants/3">
+                    <img src="https://via.placeholder.com/300" alt="Sushi World">
+                    <h4>Sushi World</h4>
+                    <p>⭐ 4.7 (300+) • Japanese • $$$</p>
+                    <button class="btn-view">View Menu</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="/terms">Terms</a></li>
+                    <li><a href="/privacy">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2023 QuickBite. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
